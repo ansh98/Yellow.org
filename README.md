@@ -8,6 +8,34 @@ It contains:
 - **GETTING_STARTED.md** → step-by-step guide for developers
 - **demo-app/** → a small TypeScript demo app showcasing SDK usage
 
+## Yellow SDK Flow
+
+![Yellow SDK Flow](./assets/yellow_sdk_flow.png)
+
+### ASCII Version (for quick reference)
+
+Demo App (TypeScript CLI)
+        |
+        v
++-------------------+
+|  ClearNode (WS)   |
++-------------------+
+        |
+        v
++-------------------+
+| Authentication    |  (EIP-712 Challenge/Verify)
++-------------------+
+        |
+   +-----------+-----------+
+   |                       |
+   v                       v
+Ledger Balances        App Session
+   (Query)               (Create)
+
+
+
+
+
 ---
 
 ## Quick Links
