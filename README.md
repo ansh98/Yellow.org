@@ -11,23 +11,31 @@ It contains:
 ## Yellow SDK Flow
 
 
-Demo App 
-        |
-        v
-+-------------------+
-|  ClearNode (WS)   |
-+-------------------+
-        |
-        v
-+-------------------+
-| Authentication    |  (EIP-712 Challenge/Verify)
-+-------------------+
-        |
-   +-----------+-----------+
-   |                       |
-   v                       v
-Ledger Balances        App Session
-   (Query)               (Create)
+## 🔄 Yellow SDK Flow (Step by Step)
+
+(1) Demo App (TypeScript CLI)
+              |
+              v
++---------------------------+
+|  (2) Connect to ClearNode |
+|        via WebSocket      |
++---------------------------+
+              |
+              v
++---------------------------+
+|  (3) Authentication       |
+|   EIP-712 Challenge/Verify|
++---------------------------+
+              |
+     +-------------------+-------------------+
+     |                                       |
+     v                                       v
++-------------------+              +-------------------+
+| (4) Ledger        |              | (5) App Session   |
+|     Balances      |              |   Creation        |
+|   (Query funds)   |              | (Open channel)    |
++-------------------+              +-------------------+
+
 
 
 
