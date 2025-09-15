@@ -10,11 +10,8 @@ It contains:
 
 ## Yellow SDK Flow
 
-![Yellow SDK Flow](./assets/yellow_sdk_flow.png)
 
-### ASCII Version (for quick reference)
-
-Demo App (TypeScript CLI)
+Demo App 
         |
         v
 +-------------------+
